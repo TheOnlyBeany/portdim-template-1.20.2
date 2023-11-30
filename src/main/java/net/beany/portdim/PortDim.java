@@ -1,5 +1,6 @@
 package net.beany.portdim;
 
+import net.beany.portdim.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ public static final String MOD_ID = "portdim";
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+
+		ModItems.registerModItems();
 	}
 }
