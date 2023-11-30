@@ -1,5 +1,7 @@
 package net.beany.portdim;
 
+import net.beany.portdim.block.ModBlocks;
+import net.beany.portdim.item.ModItemGroups;
 import net.beany.portdim.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,7 +14,9 @@ public static final String MOD_ID = "portdim";
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
