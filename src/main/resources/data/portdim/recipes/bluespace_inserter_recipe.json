@@ -2,15 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    "@s@",
     "###",
-    "###",
-    "###"
+    "@s@"
   ],
   "key": {
     "#": {
       "item":"portdim:bcrystal"
+    },
+    "@": {
+      "item":"minecraft:iron_block"
+    },
+    "s": {
+      "item":"minecraft:shulker_shell"
     }
-
   },
   "result": {
     "item": "portdim:bluespace_block"
