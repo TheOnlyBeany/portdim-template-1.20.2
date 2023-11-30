@@ -14,7 +14,8 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     public static final Block BLUESPACE_BLOCK = registerBlock("bluespace_block",
             new Block(FabricBlockSettings.copyOf(Blocks.ANDESITE)));
-
+    public static final Block BLUESPACE_ORE = registerBlock("bluespace_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
 
     private static Block registerBlock(String name,Block block) {
         registerBlockItem(name, block);

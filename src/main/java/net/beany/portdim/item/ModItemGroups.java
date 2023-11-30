@@ -12,12 +12,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup PORTDIM_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(PortDim.MOD_ID, "ruby"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
-                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.RUBY);
+            new Identifier(PortDim.MOD_ID, "bcrystal"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.bcrystal"))
+                    .icon(() -> new ItemStack(ModItems.BCRYSTAL)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.BCRYSTAL);
 
                         entries.add(ModBlocks.BLUESPACE_BLOCK);
+                        entries.add(ModBlocks.BLUESPACE_ORE);
 
 
                     }).build());
