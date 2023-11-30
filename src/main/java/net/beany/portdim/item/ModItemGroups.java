@@ -1,6 +1,7 @@
 package net.beany.portdim.item;
 
 import net.beany.portdim.PortDim;
+import net.beany.portdim.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,6 +16,10 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
+
+                        entries.add(ModBlocks.BLUESPACE_BLOCK);
+
+
                     }).build());
 
     public static void registerItemGroups() {
