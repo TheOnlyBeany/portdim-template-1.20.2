@@ -3,6 +3,8 @@ package net.beany.portdim;
 import net.beany.portdim.block.ModBlocks;
 import net.beany.portdim.item.ModItemGroups;
 import net.beany.portdim.item.ModItems;
+import net.beany.portdim.world.gen.ModOreGeneration;
+import net.beany.portdim.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,5 +20,6 @@ public static final String MOD_ID = "portdim";
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

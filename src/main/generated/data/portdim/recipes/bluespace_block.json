@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "portdim:bcrystal"
+    },
+    "@": {
+      "item": "minecraft:obsidian"
+    },
+    "s": {
+      "item": "minecraft:shulker_shell"
+    }
+  },
+  "pattern": [
+    "@s@",
+    "###",
+    "@s@"
+  ],
+  "result": {
+    "item": "portdim:bluespace_block"
+  },
+  "show_notification": true
+}

@@ -22,7 +22,7 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, BLUESPACE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUESPACE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
+                ModOrePlacement.modifiersWithCount(32, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(8), YOffset.fixed(20))));
 
     }
