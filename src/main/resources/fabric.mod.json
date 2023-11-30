@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "portdim",
+	"version": "${version}",
+	"name": "PortDim",
+	"description": "portable dimensions",
+	"authors": [
+		"Beany"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/portdim/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.beany.portdim.PortDim"
+		],
+		"client": [
+			"net.beany.portdim.PortDimClient"
+		],
+		"fabric-datagen": [
+			"net.beany.portdim.PortDimDataGenerator"
+		]
+	},
+	"mixins": [
+		"portdim.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.25",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
