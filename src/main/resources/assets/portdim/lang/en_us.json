@@ -1,9 +1,9 @@
 {
-  "item.portdim.ruby": "Ruby",
+  "item.portdim.bcrystal": "BlueSpace Crystal",
 
 
   "block.portdim.bluespace_block": "BlueSpace Inserter",
 
 
-  "itemgroup.ruby": "PortDim Group"
+  "itemgroup.bcrystal": "PortDim Group"
 }
